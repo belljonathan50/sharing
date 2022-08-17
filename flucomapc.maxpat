@@ -386,9 +386,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 347.0, 368.0, 417.0, 23.0 ],
-									"presentation_linecount" : 3,
-									"text" : "export /Users/jonathanbell/Documents/GitHub/sharing/thisanalysis.json"
+									"patching_rect" : [ 347.0, 368.0, 45.0, 23.0 ],
+									"text" : "export"
 								}
 
 							}
