@@ -2977,7 +2977,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 172.11110258102417, 341.333334445953369, 436.0, 22.0 ],
+									"patching_rect" : [ 144.11110258102417, 351.333334445953369, 436.0, 22.0 ],
 									"text" : "combine C:/Users/bellj/OneDrive/Documents/Github/dev2/sharing/ s @triggers 1"
 								}
 
@@ -3238,7 +3238,7 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-38", 0 ],
+									"destination" : [ "obj-38", 1 ],
 									"source" : [ "obj-4", 0 ]
 								}
 
