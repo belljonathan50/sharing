@@ -41,6 +41,42 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-18",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 245.690810739994049, 681.790658056735992, 33.0, 22.0 ],
+					"text" : ".wav"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-15",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 245.690810739994049, 706.938807487487793, 481.0, 22.0 ],
+					"text" : "combine C:/Users/bellj/OneDrive/Documents/sounds/mobile-sound/sample s @triggers 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-12",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 245.690810739994049, 742.08695650100708, 81.0, 22.0 ],
+					"text" : "prepend write"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-63",
 					"maxclass" : "number",
 					"numinlets" : 1,
@@ -529,18 +565,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-35",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 450.913053035736084, 713.434774398803711, 301.0, 22.0 ],
-					"text" : "/Users/jonathanbell/Documents/GitHub/sharing/sounds"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-28",
 					"maxclass" : "message",
 					"numinlets" : 2,
@@ -629,7 +653,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 33.024155616760254, 624.76810884475708, 367.0, 22.0 ],
+					"patching_rect" : [ 5.690810739994049, 624.938807487487793, 367.0, 22.0 ],
 					"text" : "combine C:/Users/bellj/OneDrive/Documents/sounds/ s @triggers 1"
 				}
 
@@ -723,7 +747,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 241.0, 383.0, 108.0, 35.0 ],
-									"presentation_linecount" : 2,
 									"text" : ";\rnumneighbours 15"
 								}
 
@@ -737,7 +760,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 217.0, 480.0, 67.0, 35.0 ],
-									"presentation_linecount" : 2,
 									"text" : ";\rmindist 0.5"
 								}
 
@@ -751,7 +773,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 60.0, 476.0, 67.0, 35.0 ],
-									"presentation_linecount" : 2,
 									"text" : ";\rmindist 0.5"
 								}
 
@@ -765,7 +786,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 95.0, 383.0, 108.0, 35.0 ],
-									"presentation_linecount" : 2,
 									"text" : ";\rnumneighbours 10"
 								}
 
@@ -5314,7 +5334,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "dictionary" ],
-					"patching_rect" : [ 141.357500493526459, 733.916257858276367, 229.0, 22.0 ],
+					"patching_rect" : [ 10.024155616760254, 733.08695650100708, 229.0, 22.0 ],
 					"text" : "fluid.concataudiofiles @destination sound",
 					"varname" : "fluid.concataudiofiles"
 				}
@@ -5327,7 +5347,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 141.357500493526459, 653.916257858276367, 209.0, 22.0 ],
+					"patching_rect" : [ 48.024155616760254, 650.170698642730713, 209.0, 22.0 ],
 					"text" : "/Users/james/dev/flucoma/max/media"
 				}
 
@@ -5339,7 +5359,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 141.357500493526459, 693.916257858276367, 94.0, 22.0 ],
+					"patching_rect" : [ 34.357500493526459, 689.916257858276367, 94.0, 22.0 ],
 					"text" : "fluid.audiofilesin"
 				}
 
@@ -8814,8 +8834,22 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-12", 0 ],
+					"source" : [ "obj-15", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-20", 0 ],
 					"source" : [ "obj-17", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-15", 0 ],
+					"source" : [ "obj-18", 0 ]
 				}
 
 			}
@@ -8918,13 +8952,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-14", 1 ],
 					"source" : [ "obj-32", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-2", 0 ],
-					"source" : [ "obj-35", 0 ]
 				}
 
 			}
@@ -9120,6 +9147,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-43", 0 ],
 					"source" : [ "obj-69", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-18", 0 ],
+					"source" : [ "obj-9", 0 ]
 				}
 
 			}
