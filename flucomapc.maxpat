@@ -46,8 +46,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 96.5, 587.790931910276413, 66.0, 22.0 ],
-					"text" : "sound.wav"
+					"patching_rect" : [ 96.5, 587.790931910276413, 72.0, 22.0 ],
+					"text" : "sample.wav"
 				}
 
 			}
@@ -629,7 +629,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 444.5, 444.16103059053421, 66.0, 24.925925076007843 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 649.143317461013794, 4.421890676021576, 104.851850986480713, 44.925925076007843 ],
+					"presentation_rect" : [ 664.143317461013794, 11.0, 104.851850986480713, 44.925925076007843 ],
 					"text" : "sounds"
 				}
 
@@ -8780,6 +8780,8 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "float", "bang" ],
 					"patching_rect" : [ 94.012226784681957, 666.308011591434479, 149.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 506.012226784681957, 44.386209547519684, 149.0, 22.0 ],
 					"text" : "buffer~ sound sample.wav"
 				}
 
