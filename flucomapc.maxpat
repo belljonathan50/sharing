@@ -46,8 +46,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 245.690810739994049, 681.790658056735992, 33.0, 22.0 ],
-					"text" : ".wav"
+					"patching_rect" : [ 96.5, 587.790931910276413, 66.0, 22.0 ],
+					"text" : "sound.wav"
 				}
 
 			}
@@ -55,11 +55,11 @@
 				"box" : 				{
 					"id" : "obj-15",
 					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 245.690810739994049, 706.938807487487793, 481.0, 22.0 ],
-					"text" : "combine C:/Users/bellj/OneDrive/Documents/sounds/mobile-sound/sample s @triggers 1"
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 96.5, 613.939081341028214, 437.0, 22.0 ],
+					"text" : "sprintf C:/Users/bellj/OneDrive/Documents/sounds/mobile-sound/%s @triggers 1"
 				}
 
 			}
@@ -70,7 +70,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 245.690810739994049, 742.08695650100708, 81.0, 22.0 ],
+					"patching_rect" : [ 96.5, 640.087230354547501, 81.0, 22.0 ],
 					"text" : "prepend write"
 				}
 
@@ -452,7 +452,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 328.512226784681957, 13.0, 34.0, 22.0 ],
+					"patching_rect" : [ 298.000000000000114, 664.08695650100708, 34.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 609.512226784681957, 11.0, 34.0, 22.0 ],
 					"text" : "write"
@@ -570,7 +570,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 255.0, 18.0, 48.0, 22.0 ],
+					"patching_rect" : [ 245.5, 664.08695650100708, 48.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 536.0, 16.0, 48.0, 22.0 ],
 					"text" : "replace"
@@ -627,7 +627,7 @@
 					"numoutlets" : 4,
 					"outlettype" : [ "", "int", "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 66.143317461013794, 503.421890676021576, 151.851850986480713, 72.925925076007843 ],
+					"patching_rect" : [ 444.5, 444.16103059053421, 66.0, 24.925925076007843 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 649.143317461013794, 4.421890676021576, 104.851850986480713, 44.925925076007843 ],
 					"text" : "sounds"
@@ -641,7 +641,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 62.476656079292297, 589.841644287109375, 59.0, 22.0 ],
+					"patching_rect" : [ 444.5, 478.790931910276413, 59.0, 22.0 ],
 					"text" : "route text"
 				}
 
@@ -653,7 +653,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 5.690810739994049, 624.938807487487793, 367.0, 22.0 ],
+					"patching_rect" : [ 96.5, 509.0, 367.0, 22.0 ],
 					"text" : "combine C:/Users/bellj/OneDrive/Documents/sounds/ s @triggers 1"
 				}
 
@@ -5334,21 +5334,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "dictionary" ],
-					"patching_rect" : [ 10.024155616760254, 733.08695650100708, 229.0, 22.0 ],
+					"patching_rect" : [ 96.5, 562.297103375196457, 229.0, 22.0 ],
 					"text" : "fluid.concataudiofiles @destination sound",
 					"varname" : "fluid.concataudiofiles"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-5",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 48.024155616760254, 650.170698642730713, 209.0, 22.0 ],
-					"text" : "/Users/james/dev/flucoma/max/media"
 				}
 
 			}
@@ -5359,7 +5347,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 34.357500493526459, 689.916257858276367, 94.0, 22.0 ],
+					"patching_rect" : [ 96.5, 535.977450370788574, 94.0, 22.0 ],
 					"text" : "fluid.audiofilesin"
 				}
 
@@ -8791,7 +8779,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "float", "bang" ],
-					"patching_rect" : [ 249.512226784681957, 59.221055090427399, 149.0, 22.0 ],
+					"patching_rect" : [ 94.012226784681957, 666.308011591434479, 149.0, 22.0 ],
 					"text" : "buffer~ sound sample.wav"
 				}
 
@@ -8815,6 +8803,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-54", 0 ],
 					"source" : [ "obj-11", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-34", 0 ],
+					"source" : [ "obj-12", 0 ]
 				}
 
 			}
@@ -8863,7 +8858,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-43", 0 ],
-					"midpoints" : [ 69.018518293356578, 499.703701555728912, 696.279381597494648, 499.703701555728912, 696.279381597494648, 26.877623617649078, 725.540244901632832, 26.877623617649078 ],
+					"midpoints" : [ 69.018518293356578, 720.703701555728912, 696.279381597494648, 720.703701555728912, 696.279381597494648, 26.877623617649078, 725.540244901632832, 26.877623617649078 ],
 					"source" : [ "obj-20", 0 ]
 				}
 
@@ -9052,13 +9047,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-48", 0 ],
 					"source" : [ "obj-49", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-2", 0 ],
-					"source" : [ "obj-5", 0 ]
 				}
 
 			}
