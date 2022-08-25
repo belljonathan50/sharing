@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 100.0, 99.0, 1688.0, 452.0 ],
+		"rect" : [ -76.0, -998.0, 1698.0, 457.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -40,6 +40,18 @@
 		"showontab" : 1,
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-16",
+					"maxclass" : "button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 446.0, 570.0, 24.0, 24.0 ]
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 13.0,
@@ -218,18 +230,6 @@
 					"outlettype" : [ "float", "list", "float", "float", "float", "float", "float", "", "int" ],
 					"patching_rect" : [ 219.5, 1106.0, 103.0, 23.0 ],
 					"text" : "info~ sound"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-5",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "bang", "" ],
-					"patching_rect" : [ 378.5, 587.790931910276413, 29.5, 22.0 ],
-					"text" : "t b l"
 				}
 
 			}
@@ -646,10 +646,10 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 487.000000000000114, 666.308011591434479, 34.0, 22.0 ],
+					"patching_rect" : [ 493.000000000000114, 535.977450370788574, 269.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 609.512226784681957, 11.0, 34.0, 22.0 ],
-					"text" : "write"
+					"presentation_rect" : [ 474.512226784681957, 5.0, 269.0, 22.0 ],
+					"text" : "write sample.wav in patch/contentlib/me/samples"
 				}
 
 			}
@@ -766,7 +766,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 378.5, 557.308011591434479, 48.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 536.0, 16.0, 48.0, 22.0 ],
+					"presentation_rect" : [ 506.012226784681957, 32.0, 48.0, 22.0 ],
 					"text" : "replace"
 				}
 
@@ -823,7 +823,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 444.5, 444.16103059053421, 66.0, 24.925925076007843 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 664.143317461013794, 11.0, 104.851850986480713, 44.925925076007843 ],
+					"presentation_rect" : [ 660.143317461013794, 32.0, 104.851850986480713, 44.925925076007843 ],
 					"text" : "sounds"
 				}
 
@@ -1299,7 +1299,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 1688.0, 426.0 ],
+						"rect" : [ 0.0, 26.0, 1698.0, 431.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -7934,7 +7934,6 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-28",
@@ -8976,7 +8975,7 @@
 					"outlettype" : [ "float", "bang" ],
 					"patching_rect" : [ 97.5, 685.308011591434479, 82.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 506.012226784681957, 44.386209547519684, 152.0, 22.0 ],
+					"presentation_rect" : [ 506.012226784681957, 59.062802076339722, 82.0, 22.0 ],
 					"text" : "buffer~ sound"
 				}
 
@@ -9028,6 +9027,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-12", 0 ],
 					"source" : [ "obj-15", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-18", 0 ],
+					"source" : [ "obj-16", 0 ]
 				}
 
 			}
@@ -9092,7 +9098,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-5", 0 ],
+					"destination" : [ "obj-34", 0 ],
 					"source" : [ "obj-28", 0 ]
 				}
 
@@ -9163,7 +9169,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-34", 0 ],
+					"destination" : [ "obj-16", 0 ],
 					"source" : [ "obj-39", 0 ]
 				}
 
@@ -9244,20 +9250,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-48", 0 ],
 					"source" : [ "obj-49", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-18", 0 ],
-					"source" : [ "obj-5", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-34", 0 ],
-					"source" : [ "obj-5", 1 ]
 				}
 
 			}
