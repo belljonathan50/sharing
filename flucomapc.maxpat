@@ -1326,7 +1326,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 1717.0, 867.0 ],
+						"rect" : [ -87.0, -964.0, 1717.0, 867.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -2052,7 +2052,7 @@
 										}
 ,
 										"classnamespace" : "box",
-										"rect" : [ 388.0, 103.0, 1311.0, 723.0 ],
+										"rect" : [ 34.0, 103.0, 964.0, 723.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 0,
 										"default_fontsize" : 12.0,
@@ -2081,6 +2081,7 @@
 										"subpatcher_template" : "",
 										"showontab" : 1,
 										"assistshowspatchername" : 0,
+										"visible" : 1,
 										"boxes" : [ 											{
 												"box" : 												{
 													"id" : "obj-51",
